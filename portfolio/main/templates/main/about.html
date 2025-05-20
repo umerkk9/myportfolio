@@ -1,0 +1,44 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}About Me{% endblock %}
+
+{% block content %}
+<section class="container">
+  <h1>About Me</h1>
+  <p>Hello! I'm <span class="text-primary">Umer</span>, a passionate full-stack Django developer on a journey to build powerful, elegant, and scalable web applications.</p>
+
+  <div class="mt-1">
+    <h2>Who I Am</h2>
+    <p>I love turning ideas into digital products. Whether it's crafting clean APIs with Django or designing modern interfaces, I strive to create meaningful user experiences. I'm constantly learning and pushing myself to grow in backend, frontend, and DevOps.</p>
+  </div>
+
+  <div class="mt-1">
+    <h2>Skills & Interests</h2>
+    <div class="flex gap-2 flex-wrap">
+      <div class="card" style="flex: 1 1 250px;">
+        <h3>Python & Django</h3>
+        <p>My go-to stack for building robust backends and APIs.</p>
+      </div>
+      <div class="card" style="flex: 1 1 250px;">
+        <h3>HTML/CSS/JS</h3>
+        <p>I enjoy crafting clean, responsive interfaces with custom CSS.</p>
+      </div>
+      <div class="card" style="flex: 1 1 250px;">
+        <h3>FastAPI (Coming Soon)</h3>
+        <p>Currently diving into FastAPI to boost my backend skills and build efficient APIs.</p>
+      </div>
+      <div class="card" style="flex: 1 1 250px;">
+        <h3>Git & GitHub</h3>
+        <p>I manage my code professionally, with readable commits and clean repositories.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-2">
+    <h2>Want to Collaborate?</h2>
+    <p>I'm open to freelance work, internships, and collaborations. Let's build something great together!</p>
+    
+  </div>
+</section>
+{% endblock %}
