@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}My Stylish Site{% endblock %}</title>
+
+    <!-- Link to your main.css -->
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}" />
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <a href="{% url 'home' %}" class="logo">My Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{%url 'about'%}">About</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+            
+        </div>
+    </nav>
+</header>
+
+<main class="content">
+    {% block content %}
+    <!-- Page-specific content will go here -->
+    {% endblock %}
+</main>
+
+<footer>
+    <p>&copy; 2025 MySite. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
