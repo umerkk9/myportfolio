@@ -10,7 +10,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'insecure-secret-for-dev')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = ['*']  # You can restrict to your domain later, e.g., ['your-app.onrender.com']
+ALLOWED_HOSTS = ['myportfolio-production-425a.up.railway.app']  # You can restrict to your domain later, e.g., ['your-app.onrender.com']
 
 # Application definition
 INSTALLED_APPS = [
@@ -76,6 +76,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 #STATICFILES_DIRS = [BASE_DIR / 'static']  # if you have a static folder
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+CSRF_TRUSTED_ORIGINS = ['https://myportfolio-production-425a.up.railway.app']
 
 # Enable gzip compression for static files
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
